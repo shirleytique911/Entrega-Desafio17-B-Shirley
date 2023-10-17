@@ -1,0 +1,12 @@
+<h1>Productos en el carrito</h1>
+{{#if products}}
+  <ul>
+    {{#each products}}
+      <li>{{this.productId.title}} - Precio: ${{this.productId.price}}</li>
+    {{/each}}
+  </ul>
+{{else}}
+  <p>El carrito está vacío.</p>
+{{/if}}
+
+<link rel="stylesheet" type="text/css" href="/css/style.css">

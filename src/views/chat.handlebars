@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Producto</title>
+     <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <h1>Chat</h1>
+    <h3>Introduce tu email de usuario</h3>
+    <form id="username-form" action="/api/msg" method="POST">
+        <input type="email" id="username" name="user" required>
+        <input type="text" id="message" name="message" required>
+        <button type="submit">Enviar mensaje</button>
+    </form>
+    
+
+<script src="/js/chat.js"></script>
+</body>
+</html>
